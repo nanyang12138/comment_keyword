@@ -15,7 +15,8 @@ def p4_edit(file_path):
   
 def search_and_comment(directory, prefix):  
     keywords = generate_keywords(prefix)  
-  
+
+    # add the extensions
     comment_symbols = {  
         '.h': '//',  
         '.cpp': '//',  
@@ -23,7 +24,8 @@ def search_and_comment(directory, prefix):
         '.svh': '//',  
         '.v': '//',  
         '.sv': '//',  
-        '.c': '//',  
+        '.c': '//',
+        'dpl': '//',
         '.txt': '#',    
     }  
   
